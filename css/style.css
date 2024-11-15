@@ -1,0 +1,35 @@
+.klas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  /* of 200px 200px 200px*/
+    grid-template-rows: 50px 50px;
+    background-color: lightgray;
+    border: 2px, solid darkgrey;
+}
+div{
+    border: 1px, solid darkgrey;
+}
+
+.box1{
+    grid-column-start:1 ;
+    grid-column-end:4 ;
+    grid-row-start:1 ;
+    grid-row-end: 4;
+}
+
+.box2{
+    grid-row-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.box3{
+    grid-row-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.box4{
+    grid-row-start: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
