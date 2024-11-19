@@ -1,35 +1,123 @@
-.klas {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;  /* of 200px 200px 200px*/
-    grid-template-rows: 50px 50px;
-    background-color: lightgray;
-    border: 2px, solid darkgrey;
-}
-div{
-    border: 1px, solid darkgrey;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+.klas {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);  /*Repeat 4 keer 1fr*/
+    grid-auto-rows: minmax(100px, auto); /*Rij zal minimaal 100px zal, en maximaal = grootte past zichzelf automatisch aan met de inhoud*/
+    grid-gap: 5px;
+}
+
+div{
+    border: 1px solid black;
+}
+
+.box1, .box2, .box3, .box4, .box6, .box7, .box8, .box9, .box10, .box11{
+    background-color: grey;
+}
+
+
+/*Columns = vertricaal
+Rows = horizontaal*/ 
+
 .box1{
-    grid-column-start:1 ;
-    grid-column-end:4 ;
-    grid-row-start:1 ;
-    grid-row-end: 4;
+    grid-column-start:1;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:2;
+    text-align: center;
+
 }
 
 .box2{
-    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: 4;
+    text-align: center;
 }
 
 .box3{
-    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 3 ;
     grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: 4;
+    text-align: center;
 }
 
 .box4{
-    grid-row-start: 6;
+    grid-column-start: 3 ;
+    grid-column-end: 4;
     grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: 4;
+    text-align: center;
+}
+
+.box5{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    text-align: center;
+    background-color: rgb(230, 255, 230);
+}
+
+.box6{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:4 ;
+    grid-row-end: 6 ;
+    text-align: center;
+}
+
+.box7{
+    grid-column-start:2 ;
+    grid-column-end:3 ;
+    grid-row-start: 4;
+    grid-row-end: 6 ;
+    text-align: center;
+}
+
+.box8{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 6 ;
+    text-align: center;
+}
+
+.box9{
+    grid-column-start:1 ;
+    grid-column-end:2 ;
+    grid-row-start:6 ;
+    grid-row-end:8 ;
+    text-align: center;
+}
+
+.box10{
+    grid-column-start: 2 ;
+    grid-column-end:3 ;
+    grid-row-start: 6 ;
+    grid-row-end:8 ;
+    text-align: center;
+}
+
+.box11{
+    grid-column-start:3 ;
+    grid-column-end:4 ;
+    grid-row-start:6 ;
+    grid-row-end:8 ;
+    text-align: center;
+}
+
+.box12{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start:8 ;
+    grid-row-end: 9;
+    text-align: center;
+    background-color: rgb(255, 212, 212);
 }
