@@ -23,8 +23,8 @@
 }
 
 
-/*Columns = vertricaal
-Rows = horizontaal*/ 
+/*Columns = horizontal
+Rows = vertical*/ 
 
 .box1{
     grid-column-start:1;
@@ -127,5 +127,4 @@ Rows = horizontaal*/
     text-align: center;
     background-color: rgb(255, 212, 212);
     border: 1px solid black;
-
 }
